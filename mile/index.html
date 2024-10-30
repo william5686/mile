@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SweetAlert Example</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- SweetAlert CSS (opcional, incluido en el JS) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css">
+
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1>Bienvenida</h1>
+        <p>Haz clic en el botón para ver el mensaje especial</p>
+        <button id="myButton" class="btn btn-success">¡Haz clic aquí!</button>
+    </div>
+
+    <!-- SweetAlert JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <!-- JavaScript -->
+    <script>
+        document.getElementById("myButton").addEventListener("click", function() {
+            Swal.fire({
+                icon: 'success',
+                title: 'Hola Mile de mi amor',
+                text: 'Este es un mensaje especial para ti.',
+                confirmButtonText: 'Aceptar'
+            });
+        });
+    </script>
+</body>
+</html>
